@@ -1,0 +1,30 @@
+name: Suggest a new vertical
+description: Propose a vertical that should have its own awesome-subreddits spoke.
+title: "[Suggest vertical] <vertical-name>"
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This list links to per-vertical awesome-subreddits spokes. Use this template to propose a vertical worth its own spoke.
+  - type: input
+    id: vertical
+    attributes:
+      label: Vertical name
+      placeholder: "Legal tech, climate, robotics, etc."
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why this vertical deserves its own spoke
+      description: Two or three sentences. Where do practitioners in this vertical actually congregate on Reddit? Are there at least 8 to 12 active subreddits worth listing?
+    validations:
+      required: true
+  - type: textarea
+    id: starter
+    attributes:
+      label: Starter list (optional)
+      description: Five or more subreddits you would expect to see on this spoke if it existed.
+    validations:
+      required: false
