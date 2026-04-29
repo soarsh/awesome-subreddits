@@ -1,6 +1,4 @@
-# Awesome Subreddits
-
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Subreddits [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 Curated subreddit lists for marketers, founders, and operators, organized by who you're trying to reach. Built around the question existing "best subreddits" lists don't ask: where does *your buyer* live, what gets you removed there, and what's the honest editorial verdict on whether you should post at all.
 
