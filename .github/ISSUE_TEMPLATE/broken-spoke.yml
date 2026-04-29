@@ -1,0 +1,32 @@
+name: Report a broken or stale spoke link
+description: Flag a spoke listed in this README that is broken, archived, or has gone stale.
+title: "[Broken spoke] <spoke-name>"
+labels: ["bug"]
+body:
+  - type: input
+    id: spoke
+    attributes:
+      label: Spoke link
+      description: The exact link as it appears in this README.
+      placeholder: "https://github.com/soarsh/awesome-..."
+    validations:
+      required: true
+  - type: dropdown
+    id: issue
+    attributes:
+      label: What is wrong
+      options:
+        - Link 404s or repo is private
+        - Repo is archived
+        - Repo is unmaintained for more than 6 months
+        - Content is materially out of date
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Direct link or short description.
+    validations:
+      required: false
